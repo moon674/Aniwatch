@@ -9,7 +9,7 @@ const client = new QueryClient();
 interface ProvidersProps extends React.PropsWithChildren {
 }
 
-export function Providers({ children, session }: ProvidersProps) {
+export function Providers({ children }: ProvidersProps) {
     return (
         <NextThemesProvider attribute="class" defaultTheme="dark" enableSystem={true} disableTransitionOnChange>
             <NextUIProvider>
