@@ -36,15 +36,15 @@ export default function Home() {
     };
   return (
     <>
-    <div class="min-h-screen bg-slate-900">
-  <div class="bg-slate-900 min-h-[86vh] container max-w-screen-md px-4 mx-auto sm:px-8">
-    <div class="pt-8 mx-auto pt-32 text-center text-white">
-        <div class="text-4xl">
-          <h1 class="font-bold">Aniwatch - Watch Free Anime Series and Movies Online</h1>
+    <div className="min-h-screen bg-slate-900">
+  <div className="bg-slate-900 min-h-[86vh] container max-w-screen-md px-4 mx-auto sm:px-8">
+    <div className="mx-auto pt-32 text-center text-white">
+        <div className="text-4xl">
+          <h1 className="font-bold">Aniwatch - Watch Free Anime Series and Movies Online</h1>
         </div>
     </div>
     
-    <div class="text-center mt-12"><a href="https://blog.mypurtech.com/" target="_blank" class="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
+    <div className="text-center mt-12"><a href="https://blog.mypurtech.com/" target="_blank" className="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
     
     <motion.div
                         animate={isOpen ? "open" : "close"}
@@ -54,7 +54,7 @@ export default function Home() {
                             <input
                                 ref={inputRef}
                                 name="search"
-                                className='relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 form-input  placeholder-gray-500 text-base px-3.5 py-2.5 shadow-sm bg-gray-900  text-white ring-inset  ring-gray-700 focus:ring-primary-500 focus:ring-primary-400 rounded-lg md:rounded-r-none ring-0 focus:ring-0  selection:bg-slate-700 placeholder-gray-100'
+                                className='relative block w-full disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none border-0 form-input   text-base px-3.5 py-2.5 shadow-sm bg-gray-900  text-white ring-inset  ring-gray-700 focus:ring-primary-400 rounded-lg md:rounded-r-none ring-0 focus:ring-0  selection:bg-slate-700 placeholder-gray-100'
                                 placeholder='Search anime...'
                                 value={search}
                                 onChange={handleChange}
@@ -73,12 +73,12 @@ export default function Home() {
                         </div>}
                     </motion.div>
     
-    <div class="py-8">
-      <main class="container max-w-screen-md px-4 mx-auto sm:px-8">
-        <div class="p-6 my-6 shadow-md bg-slate-800 rounded-xl md-content">
-          <div class="prose text-white">
+    <div className="py-8">
+      <main className="container max-w-screen-md px-4 mx-auto sm:px-8">
+        <div className="p-6 my-6 shadow-md bg-slate-800 rounded-xl md-content">
+          <div className="prose text-white">
             <p>
-              Explore <strong class="text-blue-600">Aniwatch</strong>, the best platform to stream anime online. Enjoy a vast collection of anime series and movies in high quality, with subtitles and dubs. Aniwatch is your ultimate anime streaming solution!
+              Explore <strong className="text-blue-600">Aniwatch</strong>, the best platform to stream anime online. Enjoy a vast collection of anime series and movies in high quality, with subtitles and dubs. Aniwatch is your ultimate anime streaming solution!
             </p>
             
           </div>
