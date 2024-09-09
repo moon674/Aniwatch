@@ -44,7 +44,7 @@ export default function Home() {
         </div>
     </div>
     
-    <div className="text-center mt-12"><a href="https://blog.mypurtech.com/" target="_blank" className="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
+    <div className="text-center mt-12"><a href="/home" target="_blank" className="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
     
     <motion.div
                         animate={isOpen ? "open" : "close"}
