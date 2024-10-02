@@ -1,6 +1,7 @@
 
 import { OtherAnime, OtherAnimeLoading, RecentAnime, RecentAnimeLoading, TopAnime, TopAnimeLoading, TrendingAnime, TrendingAnimeLoading } from "@/sections/home";
 import { Suspense } from "react";
+import Google from '@/components/google'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
           <TrendingAnime />
         </Suspense>
       </div>
+      <Google />
 
       <div className="w-full grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-5  sm:px-2 lg:px-4 ">
         <div className="w-full">

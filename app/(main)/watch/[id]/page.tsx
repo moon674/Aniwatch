@@ -7,6 +7,7 @@ import { DubEpisode, RawEpisode, SubEpisode } from "@/services/aniwatch/types/an
 import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
 import { useWatchHistory } from "@/hooks/useWatchHistory";
 import { AnimeInfo, Episodes, EpisodesMobile, ServerList, Player, Related } from "@/sections/watch";
+import Google from '@/components/google'
 
 interface WatchProps {
     params: {
@@ -78,6 +79,7 @@ export default function Watch({ params, searchParams }: WatchProps) {
                 <BreadcrumbItem>Watch</BreadcrumbItem>
                 <BreadcrumbItem href={`/watch/${params.id}`}>{animeInfo?.anime.info.name}</BreadcrumbItem>
             </Breadcrumbs>
+            <Google />
             <div className="w-full h-full p-4 grid grid-cols-1 lg:grid-cols-[800px_1fr] xl:grid-cols-[1fr_800px_1fr] gap-4 mb-4">
                 <Episodes episodeId={episodeId} episodeList={episodeList} watchedEpisodeIds={getWatchedEpisodes(params.id)} />
                 <div>

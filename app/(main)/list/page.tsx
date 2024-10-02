@@ -4,6 +4,7 @@ import { AnimeCategoryType, getAnimeByCategory, getAnimeByGenre, getProducerAnim
 import { BreadcrumbItem, Breadcrumbs, CircularProgress, Pagination } from '@nextui-org/react'
 import { useQueries } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
+import Google from '@/components/google'
 interface listProps {
     category?: AnimeCategoryType,
     genre?: string,
@@ -42,6 +43,8 @@ export default function List({ searchParams }: { searchParams: listProps }) {
                 <BreadcrumbItem>Producer</BreadcrumbItem>
                 <BreadcrumbItem href={`/list?producer=${producerAnimes.producerName}`}>{producerAnimes.producerName}</BreadcrumbItem>
             </Breadcrumbs>}
+
+            <Google />
 
             <div className='w-full flex flex-col items-center gap-5'>
                 {animeCategoryLoading

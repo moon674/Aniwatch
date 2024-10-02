@@ -8,7 +8,6 @@ import { getAnimeSearchSuggestions } from '@/services/aniwatch/api';
 import { useRouter } from 'next/navigation';
 import { CircularProgress } from '@nextui-org/react';
 import { Icon, SearchCard, ThemeSwitcher } from '@/components'
-import Google from '@/components/google'
 
 
 export default function Header({ isFullOption = true }: { isFullOption?: boolean }) {
@@ -76,7 +75,6 @@ export default function Header({ isFullOption = true }: { isFullOption?: boolean
 
     return (
         <>
-        	<Google />
             {isOpen && <div className="w-full h-screen bg-background/40 backdrop-blur-sm fixed z-[97]" onClick={() => setOpen(false)}></div>}
             <motion.div
                 style={{ background, backdropFilter: filter, WebkitBackdropFilter: filter }}
