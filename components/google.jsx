@@ -24,7 +24,6 @@ const Google = () => {
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
   }, []);
-  return null
 };
 
 export default Google;
