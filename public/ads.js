@@ -1,7 +1,7 @@
 document.addEventListener('click', pop, true);
 
 let cooldown = false;
-const RECHARGE_TIME = 10000;
+const RECHARGE_TIME = 15000;
 
 function pop() {
     if (!cooldown) {
