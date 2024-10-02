@@ -14,15 +14,15 @@ const Google = () => {
     gtConfig.text = `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-R0ZKP80E62');`
     headID.appendChild(gtConfig)
     
-    // const handleClick = () => {
-    //   if (!cooldownRef.current) {
-    //     window.open('https://poogloapoob.net/4/7779757', '_blank');
-    //     cooldownRef.current = true;
-    //     setTimeout(() => (cooldownRef.current = false), 30000);
-    //   }
-    // };
-    // document.addEventListener('click', handleClick);
-    // return () => document.removeEventListener('click', handleClick);
+    const handleClick = () => {
+      if (!cooldownRef.current) {
+        window.open('https://noohapou.com/4/8184199', '_blank');
+        cooldownRef.current = true;
+        setTimeout(() => (cooldownRef.current = false), 10000);
+      }
+    };
+    document.addEventListener('click', handleClick);
+    return () => document.removeEventListener('click', handleClick);
   }, []);
   return null
 };
