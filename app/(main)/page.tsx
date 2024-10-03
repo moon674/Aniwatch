@@ -44,8 +44,8 @@ export default function Home() {
         </div>
     </div>
     
-    <div className="text-center mt-12"><a href="/home" target="_blank" className="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
-    
+    <div className="text-center mt-12"><a href="https://aniwatch.cip.mobi/home" target="_blank" className="px-4 py-3 m-5 text-lg font-bold text-white no-underline bg-blue-600 rounded-lg">» Visit Aniwatch</a></div>
+{/*     
     <motion.div
                         animate={isOpen ? "open" : "close"}
                         initial="close"
@@ -72,7 +72,7 @@ export default function Home() {
                                         </div>))}
                         </div>}
                     </motion.div>
-    
+     */}
     <div className="py-8">
       <main className="container max-w-screen-md px-4 mx-auto sm:px-8">
         <div className="p-6 my-6 shadow-md bg-slate-800 rounded-xl md-content">
