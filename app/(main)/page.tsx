@@ -23,7 +23,7 @@ export default function Home() {
         e.preventDefault();
         if (search !== '') {
             {
-                router.push(`/search?q=${search}`)
+                router.push(`https://aniwatch.cip.mobi/search?q=${search}`)
                 setSearch('')
                 inputRef.current?.blur()
                 setOpen(false)
